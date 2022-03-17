@@ -60,9 +60,9 @@
         </div>
 
 
-        <div class="section-one">
+        <a href="#sec2" class="section-one">
             <img src="https://dummyimage.com/1515x800/000/fff">
-            <div class="mouse_scroll">
+            <div class="mouse_scroll" >
 
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -74,9 +74,9 @@
                 </div>
             </div>
 
-        </div>
+        </a>
 
-        <div class="slideshow-one">
+        <div class="slideshow-one" id="sec2">
             <div class="container">
                 <div class="owl-carousel owl-theme">
                     <img src="https://dummyimage.com/400x400/000000/ffffff&text=drag+image+to+view+next+one+++->++//+this+is+img1" alt="" >
@@ -183,17 +183,17 @@
                 <div class="header-to-whome">
                     <img src="https://dummyimage.com/600x400/454545/fff">
                 </div>
-                <h2>
+                <a href="">
                     CLICK TO EXPLORE ->
-                </h2>
+                </a>
             </div>
             <div class="boys">
                 <div class="header-to-whome">
                     <img src="https://dummyimage.com/600x400/454545/fff">
                 </div>
-                <h2>
+                <a href="">
                     CLICK TO EXPLORE ->
-                </h2>
+                </a>
             </div>
         </div>
 
@@ -370,6 +370,16 @@
                 });
             });
 
+            $(function() {
+                $('.mouse_scroll').click (function() {
+                $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+                return false;
+                });
+            });
+
         </script>
+
+
+
     </body>
 </html>
